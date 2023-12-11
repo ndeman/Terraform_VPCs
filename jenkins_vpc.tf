@@ -3,4 +3,7 @@ resource "aws_vpc" "testing" {
  tags = {
   name = "jenkins_vpc"
  }
+provider "aws" {
+  region = "us-east-1"
+ }
 }
